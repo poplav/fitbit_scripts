@@ -9,7 +9,7 @@ print getValDayDistribution("Minutes Asleep")<br>
 
 453<br>
 497<br>
-[442, 497, 320, 495, 450, 468]
+[442, 497, 320, 495, 450, 468, 467]
 
          Date  Minutes Asleep  Minutes Awake  Number of Awakenings  \
 46 2015-04-16             495             40                    25   
