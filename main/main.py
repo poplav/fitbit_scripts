@@ -25,7 +25,7 @@ def getAvgValOnDay(day, value):
 
 def getValDayDistribution(value):
     vals = []
-    for i in xrange(0,6):
+    for i in xrange(0,7):
         vals.append(getAvgValOnDay(i, "Minutes Asleep"))
     return vals;
 
