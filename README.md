@@ -3,12 +3,12 @@ fitbit_scripts
 
 Crunch the numbers on your fitbit data specifically sleep
 
-print getAvgValLookBack(38, "Minutes Asleep")
-print getAvgValOnDay(1, "Minutes Asleep")
-print getValDayDistribution("Minutes Asleep")
+print getAvgValLookBack(38, "Minutes Asleep")<br>
+print getAvgValOnDay(1, "Minutes Asleep")<br>
+print getValDayDistribution("Minutes Asleep")<br>
 
-453
-497
+453<br>
+497<br>
 [442, 497, 320, 495, 450, 468]
 
          Date  Minutes Asleep  Minutes Awake  Number of Awakenings  \
