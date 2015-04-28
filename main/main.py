@@ -21,7 +21,6 @@ def getAvgValLookBack(lookBack, value):
 
 def getAvgValOnDay(day, value):
     tempDf = df[(df["weekday"] == day)]
-    print tempDf
     return tempDf[value].sum() / tempDf[value].count()
 
 def getValDayDistribution(value):
@@ -31,8 +30,8 @@ def getValDayDistribution(value):
     return vals;
 
 df = readCsv('/home/mike/Desktop/fitbit_export_20150421.csv')
+df = df[df["Minutes Asleep"] > 0]
 df["weekday"] = df["Date"].apply(lambda x: x.weekday())
-#print df
-print getAvgValLookBack(17, "Minutes Asleep")
+print getAvgValLookBack(38, "Minutes Asleep")
 print getAvgValOnDay(1, "Minutes Asleep")
 print getValDayDistribution("Minutes Asleep")
